@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #FAFAF5;
+  --color-cream-dark: #F5F0E8;
+  --color-gold: #C8A24E;
+  --color-gold-light: #E8D5A3;
+  --color-gold-dark: #A8882E;
+  --color-charcoal: #1A1A1A;
+  --color-warm-gray: #E8E3DA;
+  --color-warm-gray-light: #F0ECE4;
+}
+
+:root {
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Playfair Display', serif;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.1) transparent;
+}
+
+*::-webkit-scrollbar { width: 6px; }
+*::-webkit-scrollbar-track { background: transparent; }
+*::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.1); border-radius: 3px; }
+*::-webkit-scrollbar-thumb:hover { background: rgba(0, 0, 0, 0.2); }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #FAFAF5;
+  color: #1A1A1A;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(200, 162, 78, 0.3);
+  color: #1A1A1A;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #1A1A1A;
+  -webkit-box-shadow: 0 0 0px 1000px #F5F0E8 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

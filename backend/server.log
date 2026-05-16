@@ -1,0 +1,25 @@
+MySQL connected successfully via Prisma
+
+  Premium Perfume Store API
+  Server: http://localhost:5000
+  Health: http://localhost:5000/api/health
+  Environment: development
+
+prisma:query SELECT 1
+prisma:query SELECT `perfume_luxury`.`users`.`id`, `perfume_luxury`.`users`.`name`, `perfume_luxury`.`users`.`email`, `perfume_luxury`.`users`.`password`, `perfume_luxury`.`users`.`phone`, `perfume_luxury`.`users`.`phone_verified`, `perfume_luxury`.`users`.`avatar`, `perfume_luxury`.`users`.`address`, `perfume_luxury`.`users`.`role`, `perfume_luxury`.`users`.`created_at`, `perfume_luxury`.`users`.`updated_at` FROM `perfume_luxury`.`users` WHERE (`perfume_luxury`.`users`.`email` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query BEGIN
+prisma:query INSERT INTO `perfume_luxury`.`users` (`id`,`name`,`email`,`password`,`phone`,`phone_verified`,`role`,`created_at`,`updated_at`) VALUES (?,?,?,?,?,?,?,?,?)
+prisma:query SELECT `perfume_luxury`.`users`.`id`, `perfume_luxury`.`users`.`name`, `perfume_luxury`.`users`.`email`, `perfume_luxury`.`users`.`phone`, `perfume_luxury`.`users`.`role`, `perfume_luxury`.`users`.`created_at` FROM `perfume_luxury`.`users` WHERE `perfume_luxury`.`users`.`id` = ? LIMIT ? OFFSET ?
+prisma:query COMMIT
+prisma:query BEGIN
+prisma:query INSERT INTO `perfume_luxury`.`cart` (`id`,`user_id`,`discount`,`created_at`,`updated_at`) VALUES (?,?,?,?,?)
+prisma:query SELECT `perfume_luxury`.`cart`.`id`, `perfume_luxury`.`cart`.`user_id`, `perfume_luxury`.`cart`.`coupon_id`, `perfume_luxury`.`cart`.`discount`, `perfume_luxury`.`cart`.`created_at`, `perfume_luxury`.`cart`.`updated_at` FROM `perfume_luxury`.`cart` WHERE `perfume_luxury`.`cart`.`id` = ? LIMIT ? OFFSET ?
+prisma:query COMMIT
+prisma:query SELECT `perfume_luxury`.`users`.`id`, `perfume_luxury`.`users`.`email`, `perfume_luxury`.`users`.`phone` FROM `perfume_luxury`.`users` WHERE (`perfume_luxury`.`users`.`email` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `perfume_luxury`.`users`.`id`, `perfume_luxury`.`users`.`email`, `perfume_luxury`.`users`.`phone` FROM `perfume_luxury`.`users` WHERE (`perfume_luxury`.`users`.`email` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT 1
+prisma:query SELECT `perfume_luxury`.`users`.`id`, `perfume_luxury`.`users`.`email`, `perfume_luxury`.`users`.`phone` FROM `perfume_luxury`.`users` WHERE (`perfume_luxury`.`users`.`email` = ? AND 1=1) LIMIT ? OFFSET ?
+[OTP EMAIL] Uğurla göndərildi -> testuser@example.com
+prisma:query SELECT 1
+prisma:query SELECT `perfume_luxury`.`users`.`id`, `perfume_luxury`.`users`.`email`, `perfume_luxury`.`users`.`phone` FROM `perfume_luxury`.`users` WHERE (`perfume_luxury`.`users`.`email` = ? AND 1=1) LIMIT ? OFFSET ?
+[OTP EMAIL] Uğurla göndərildi -> testuser@example.com
